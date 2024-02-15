@@ -88,17 +88,19 @@
                     <h6 class="mt-3">Enter your information</h6>
                     <div class="mb-3 mt-3">
                         <input style="height: 55px"
-                        type="text" placeholder="Name" class="form-control" >
+                               type="text" placeholder="Name" class="form-control">
                     </div>
                     <div class="">
                         <input placeholder="Phone" type="text" id="phone-input" class="masked-input form-control"
                                data-inputmask="'mask': '+999 99 999-9999'" value="+998"
-                        style="height: 55px">
+                               style="height: 55px">
                     </div>
                     <button type="button" class="btn btn-secondary w-100 mt-3" style="height: 55px">Back</button>
-                    <button type="button" class="btn btn-dark w-100 mt-3 submit" style="height: 55px">
-                        <a href="success.html">Submit</a>
-                    </button>
+                    <a href="success.html">
+                        <button type="button" class="btn btn-dark w-100 mt-3 submit" style="height: 55px">
+                            Submit
+                        </button>
+                    </a>
                 </form>
             </div>
         </div>
@@ -108,10 +110,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 <script>
-   $(document).ready(function(){
-      // Apply input mask to elements with the "masked-input" class
-      $('.masked-input').inputmask();
-   });
+    $(document).ready(function () {
+        // Apply input mask to elements with the "masked-input" class
+        $('.masked-input').inputmask();
+    });
 </script>
 
 </body>
