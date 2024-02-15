@@ -152,6 +152,7 @@ body {
     padding-top: 2px;
     margin-left: 15px;
     margin-right: 15px;
+    border-bottom: 1px solid #E2E8F0;
 }
 
 .form-check-label {
@@ -165,7 +166,7 @@ body {
 }
 
 .scroll {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: FLEX-START;
@@ -205,6 +206,7 @@ body {
         position: fixed;
         bottom: 2vh;
     }
+
 }
 
 .scroll::-webkit-scrollbar {
@@ -218,7 +220,7 @@ body {
 
 .scroll::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgb(255, 187, 10);
+    -webkit-box-shadow: inset 0 0 6px rgb(211, 203, 173);
 }
 
 .form-control {
@@ -270,7 +272,6 @@ body {
     position: relative;
     top: 50vh;
 }
-
 
 .footer button {
     height: 50px;

@@ -87,11 +87,12 @@
                 <form action="/action_page.php">
                     <h6 class="mt-3">Enter your information</h6>
                     <div class="mb-3 mt-3">
-                        <input type="email" class="form-control" id="email" placeholder="Enter phone number"
-                               name="email" style="height: 55px">
+                        <input style="height: 55px"
+                        type="text" placeholder="Name" class="form-control" >
                     </div>
                     <div class="">
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter your name" name="pswd"
+                        <input placeholder="Phone" type="text" id="phone-input" class="masked-input form-control"
+                               data-inputmask="'mask': '+999 99 999-9999'" value="+998"
                         style="height: 55px">
                     </div>
                     <button type="button" class="btn btn-secondary w-100 mt-3" style="height: 55px">Back</button>
@@ -103,5 +104,15 @@
         </div>
     </div>
 </main>
+<!-- Include the Inputmask library from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+<script>
+   $(document).ready(function(){
+      // Apply input mask to elements with the "masked-input" class
+      $('.masked-input').inputmask();
+   });
+</script>
+
 </body>
 </html>
